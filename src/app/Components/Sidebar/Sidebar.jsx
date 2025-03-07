@@ -1,7 +1,7 @@
 "use client"
 
 import { Plus, MessageSquare, Settings, LogOut } from "lucide-react"
-import { Button } from "./components/ui/button"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useState } from "react"
 
