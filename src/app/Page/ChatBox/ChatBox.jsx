@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/Components/ui/button";
-import { Textarea } from "@/Components/ui/textarea";
+import { Button } from "../../Components/ui/button";
+import { Textarea } from "../../Components/ui/textarea";
 import { SendHorizontal } from "lucide-react";
 import { useState } from "react";
 
