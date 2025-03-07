@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { plus, MessageSquare, Settings, LogOut } from "lucide-react"
+import { Plus, MessageSquare, Settings, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
