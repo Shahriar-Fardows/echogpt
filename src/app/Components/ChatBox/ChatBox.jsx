@@ -19,7 +19,7 @@ export default function ChatBox({ onSendMessage }) {
   return (
     <div className="flex items-end gap-2">
       <Textarea
-        className="flex-1 resize-none border border-gray-300 rounded-md min-h-[50px] max-h-[150px] text-gray-800 placeholder-gray-400 focus:ring-1 focus:ring-blue-500"
+        className="flex-1 resize-none border border-gray-300 rounded-md min-h-[100px] max-h-[150px] text-gray-800 placeholder-gray-400 focus:ring-1 focus:ring-blue-500"
         placeholder="Type your message..."
         value={message}
         onChange={(e) => setMessage(e.target.value)}

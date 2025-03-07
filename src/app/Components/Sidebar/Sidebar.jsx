@@ -1,13 +1,12 @@
 "use client"
 
-import React from "react"
 import { Plus, MessageSquare, Settings, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { useState } from "react"
 
-export function Sidebar({ className }) {
-    const [isOpen, setIsOpen] = React.useState(true)
-    const [conversations, setConversations] = React.useState([
+export function Sidebar({  }) {
+    const [conversations, setConversations] = useState([
         { id: 1, title: "Website design ideas", date: "2 hours ago" },
         { id: 2, title: "JavaScript debugging help", date: "Yesterday" },
         { id: 3, title: "Next.js routing question", date: "3 days ago" },
@@ -27,8 +26,7 @@ export function Sidebar({ className }) {
            
             {/* Sidebar */}
             <div
-                className={`bg-sidebar text-sidebar-foreground border-r border-border transition-all duration-300 flex flex-col ${isOpen ? "w-64" : "w-0 overflow-hidden"
-                    }`}
+                className={`bg-sidebar text-sidebar-foreground border-r border-border transition-all duration-300 flex flex-col `}
             >
                 {/* New Chat Button */}
                 <div className="p-4">
