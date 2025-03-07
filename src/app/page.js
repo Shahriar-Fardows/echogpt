@@ -1,7 +1,7 @@
 "use client"; 
 
-import ChatBox from "./Components/ChatBox/ChatBox";
-import { Sidebar } from "./Components/Sidebar/Sidebar";
+import ChatBox from "./Page/ChatBox/ChatBox";
+import { Sidebar } from "./Page/Sidebar/Sidebar";
 import { useState } from "react";
 
 export default function Home() {
