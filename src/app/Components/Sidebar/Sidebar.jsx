@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { PanelRightOpen ,PanelLeftOpen , Plus, MessageSquare, Settings, LogOut } from "lucide-react"
+import { plus, MessageSquare, Settings, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -12,8 +12,6 @@ export function Sidebar({ className }) {
         { id: 2, title: "JavaScript debugging help", date: "Yesterday" },
         { id: 3, title: "Next.js routing question", date: "3 days ago" },
     ])
-
-    const toggleSidebar = () => setIsOpen(!isOpen)
 
     const addNewChat = () => {
         const newChat = {
@@ -79,11 +77,6 @@ export function Sidebar({ className }) {
                         Logout
                     </Button>
                 </div>
-            </div>
-             {/* Sidebar Toggle Button */}
-             
-             <div className="flex items-center justify-center w-12 h-[10%] cursor-pointer" onClick={toggleSidebar}>
-                {isOpen ? <PanelRightOpen  size={24} /> : <PanelLeftOpen   size={24} />}
             </div>
              
         </div>
